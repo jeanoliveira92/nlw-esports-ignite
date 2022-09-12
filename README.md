@@ -1,2 +1,45 @@
-# nlw-esports-ignite
-nlw-esports-ignite
+<h1 align="center">
+    <img alt="NLW-eSports" title="" src="https://github.com/jeanoliveira92/nlw-esports-ignite/blob/main/logo.svg" width="250px" />
+</h1>
+<p align="center">
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
+
+<br>
+
+<p align="center">
+## Landing Page
+  <img alt="Frontend" src="https://raw.githubusercontent.com/jeanoliveira92/nlw-esports-ignite/main/screenshot.jpg" width="100%">
+## Splash Screen
+  <img alt="Frontend" src="https://raw.githubusercontent.com/jeanoliveira92/nlw-esports-ignite/main/screenshot2.jpg" width="100%">
+## Mobile
+  <img alt="Frontend" src="https://raw.githubusercontent.com/jeanoliveira92/nlw-esports-ignite/main/screenshot3.jpg" width="100%">
+</p>
+
+## :rocket: Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Typescript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/en/)
+- [ReactJs](https://reactjs.org)
+- [ReactNative](https://reactnative.dev)
+- [Vite](https://vitejs.dev/)
+- [Expo](https://expo.dev/)
+
+## 💻 Projeto
+
+Next Level Week eSports
+
+## 🔖 Layout
+
+O layout você poderá acessar através [desse link](https://www.figma.com/file/Dyzy79bRaBq3PY7MyrZOlf/NLW-eSports-(Community)?node-id=0%3A1).
+
+
+## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
