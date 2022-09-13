@@ -7,17 +7,16 @@
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
-
 <br>
 
-<p align="center">
 ## Landing Page
   <img alt="Frontend" src="https://raw.githubusercontent.com/jeanoliveira92/nlw-esports-ignite/main/screenshot.jpg" width="100%">
+  
 ## Splash Screen
   <img alt="Frontend" src="https://raw.githubusercontent.com/jeanoliveira92/nlw-esports-ignite/main/screenshot2.jpg" width="100%">
+  
 ## Mobile
   <img alt="Frontend" src="https://raw.githubusercontent.com/jeanoliveira92/nlw-esports-ignite/main/screenshot3.jpg" width="100%">
-</p>
 
 ## :rocket: Tecnologias
 
