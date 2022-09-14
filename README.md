@@ -29,6 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [ReactNative](https://reactnative.dev)
 - [Tailwindcss](https://tailwindcss.com/)
 - [Phosphoricons](https://phosphoricons.com/)
+- [Prisma ORM](https://www.prisma.io//)
 - [Vite](https://vitejs.dev/)
 - [Expo](https://expo.dev/)
 
