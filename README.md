@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="NLW-eSports" title="" src="https://github.com/jeanoliveira92/nlw-esports-ignite/blob/main/logo.svg" width="250px" />
+    <img alt="NLW-eSports" title="" src="https://raw.githubusercontent.com/jeanoliveira92/nlw-esports-ignite/58a27076654e677c74014846e704c86e4fbbdeed/web/src/assets/eSportsNLWLogo.svg" width="250px" />
 </h1>
 <p align="center">
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
