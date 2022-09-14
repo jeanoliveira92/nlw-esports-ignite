@@ -27,6 +27,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Node.js](https://nodejs.org/en/)
 - [ReactJs](https://reactjs.org)
 - [ReactNative](https://reactnative.dev)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Phosphoricons](https://phosphoricons.com/)
 - [Vite](https://vitejs.dev/)
 - [Expo](https://expo.dev/)
 
