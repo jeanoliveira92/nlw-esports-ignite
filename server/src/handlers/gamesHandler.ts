@@ -1,9 +1,12 @@
 
-import { Request, Response } from 'express';
+import { Request, Response, NextFunction } from 'express';
 import { PrismaClient } from '@prisma/client'
 
 import { convertHourStringToMinutes } from '../utils/convert-hour-string-to-minutes';
 import { convertMinutesToHourString } from '../utils/conver-minutes-to-hours-string';
+
+import { gamesSchema } from '../schemas/gamesSchema';
+import { adsSchema } from '../schemas/adsSchema';
 
 const prisma = new PrismaClient({ log: ['query'] });
 
@@ -20,8 +23,13 @@ const gamesHandler = {
         return response.json(games);
     },
 
-    listAdsByGame: async (request: Request, response: Response) => {
-        const gameId = request.params.id;
+    listAdsByGame: async (request: Request, response: Response, next: NextFunction) => {
+        const params = request.params;
+
+        const validate = gamesSchema.safeParse(params)
+        if (!validate.success) return next(validate.error.issues[0].message)
+
+        const { id: gameId } = params;
 
         const ads = await prisma.ad.findMany({
             select: { id: true, name: true, weekDays: true, useVoiceChannel: true, yearsPlaying: true, hourStart: true, hourEnd: true },
@@ -37,9 +45,18 @@ const gamesHandler = {
         })));
     },
 
-    createAd: async (request: Request, response: Response) => {
-        const gameId = request.params.id;
-        const body: any = request.body;
+    createAd: async (request: Request, response: Response, next: NextFunction) => {
+        const { params, body }: any = request;
+
+        const validateParams = gamesSchema.safeParse(params)
+        if (!validateParams.success) return next(validateParams.error.issues[0].message)
+
+        const validateBody = adsSchema.safeParse(body)
+        if (!validateBody.success) return next(validateBody.error.issues.map(issue => {
+            return { [issue.path[0]]: issue.message }
+        }))
+
+        const { id: gameId } = params;
 
         const ad = await prisma.ad.create({
             data: {
