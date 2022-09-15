@@ -7,7 +7,6 @@
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
-<br>
 
 ## Landing Page
   <img alt="Frontend" src="https://raw.githubusercontent.com/jeanoliveira92/nlw-esports-ignite/main/screenshot.jpg" width="100%">
