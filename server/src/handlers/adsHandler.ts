@@ -7,10 +7,12 @@ const prisma = new PrismaClient({ log: ['query'] });
 
 const addsHandler = {
     getDiscordByID: async (request: Request, response: Response, next: NextFunction) => {
-        const { id: adId } = request.params;
+        const { params } = request;
 
-        const validate = idSchema.safeParse(adId);
-        if (!validate.success) next(validate.error.issues[0].message)
+        const validate = idSchema.safeParse(params);
+        if (!validate.success) return next(validate.error.issues[0].message)
+
+        const { id: adId } = request.params;
 
         const ad: any = await prisma.ad.findUnique({
             select: { discord: true },
